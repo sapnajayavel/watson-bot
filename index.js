@@ -153,17 +153,17 @@ app.post('/webhook/', function(req, res) {
 			// receives response.
 
 			// Set up Conversation service wrapper.
-			var conversation = new ConversationV1({
-			  "username": constants.WATSON_CONV_USERNAME, // replace with username from service key
-			  "password": constants.WATSON_CONV_PASSWORD, // replace with password from service key
-			  "path": { workspace_id: constants.WATSON_CONV_WORKSPACE_ID }, // replace with workspace ID
-			  "version_date": '2016-07-11'
-			});
+			// var conversation = new ConversationV1({
+			//   "username": constants.WATSON_CONV_USERNAME, // replace with username from service key
+			//   "password": constants.WATSON_CONV_PASSWORD, // replace with password from service key
+			//   "path": { workspace_id: constants.WATSON_CONV_WORKSPACE_ID }, // replace with workspace ID
+			//   "version_date": '2016-07-11'
+			// });
 
-			conversation.message({
-				input: { "text": text }
-				//context : response.context,
-				}, processResponse)
+			// conversation.message({
+			// 	input: { "text": text }
+			// 	//context : response.context,
+			// 	}, processResponse)
 
 			// Process the conversation response.
 			function processResponse(err, response) {
