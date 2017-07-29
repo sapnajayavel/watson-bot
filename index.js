@@ -6,7 +6,6 @@ var util = require('./modules/util');
 var commerce = require('./modules/commerce');
 var fbMessenger = require('./modules/fbMessenger');
 var database = require('./modules/databaseutils');
-var ConversationV1 = require('watson-developer-cloud/conversation/v1');
 
 var app = express();
 
