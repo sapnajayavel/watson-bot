@@ -5,7 +5,7 @@ var constants = require('./modules/constants');
 var util = require('./modules/util');
 var commerce = require('./modules/commerce');
 var fbMessenger = require('./modules/fbMessenger');
-var database = require('./modules/databaseutils');
+var database = require('./modules/databaseutils'); 
 
 var app = express();
 
@@ -28,7 +28,7 @@ app.get('/login', function(req, res) {
 });
 
 app.post('/loginCmd', function(req, res) {
-
+	console.log('Sapna');
     commerce.login(req.body.logonId, req.body.logonPassword, res);
 });
 
